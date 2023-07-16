@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            /* padding: 0; */
+            background-color: #c2c8d1;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .divider {
+            width: 1px;
+            margin: 3px 0;
+            /* margin: 4px 5px; */
+            background-color: #444647;
+        }
+
+        .dropdown .btn {
+            font-size: 12px;
+            padding: 6px 16px;
+            border: none;
+            background-color: #c2c8d1;
+            margin: 0;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 250px;
+            right: 0;
+            border: 1px #c2c8d1 solid;
+            /* display: flex; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        a {
+            text-align: left;
+            font-size: 12px;
+            width: 30%;
+            margin: 3px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+
+            display: flex;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .dropdown:hover .btn {
+            cursor: pointer;
+            background-color: white;
+            color: red;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="dropdown">
+            <button class="btn">我的京东</button>
+            <div class="dropdown-menu">
+                <a>合作招商</a>
+                <a>学习中心</a>
+                <a>商家后台</a>
+                <a>京麦工作台</a>
+                <a>商家帮助</a>
+                <a>规则平台</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="dropdown">
+            <button class="btn">商家服务</button>
+            <div class="dropdown-menu">
+                <a>待处理订单</a>
+                <a>我的问答</a>
+                <a>降价商品</a>
+                <a>我的关注</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
